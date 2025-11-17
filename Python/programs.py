@@ -219,9 +219,6 @@
 # print(l)
 #======================================================================================
 # wap to find 3 largest element and 2nd smallest element from the below list
-l = [1, 2, 3, 4, 5, 6]
-l1 = []
-while l:
 
 
 
