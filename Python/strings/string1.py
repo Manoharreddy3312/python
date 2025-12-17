@@ -251,6 +251,6 @@ print(q[:7])
 # 20. Slice 'datastructure' to remove the first and last characters.
 r = 'datastructure'
 print(r[1:-1])
-# datastructur
+# atastructur
 
 #========================================================================================
