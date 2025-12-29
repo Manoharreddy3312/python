@@ -1,0 +1,41 @@
+#! OOPs: 
+========
+# (Object Oriened Programming structure)
+
+# ! ==> it is an concept which is used to provide the structure to the program
+
+# ! ADV & DIS-Adv
+
+#! 1.structured code 
+#! 2.code enhanceability
+#! 3.code reusability
+#! 4.connecting multiple members or properties
+#! 5.provide security
+
+
+#! 1. CLASS: 
+==>BLUE PRINT OF AN OBJECT(structure OF THE Object)
+==>WHICH WILL STORE THE FUNCTIONALITY OR PROPERTY OF AN OBJECT
+
+CLASS CREATION:
+syntax:
+
+class Class_name:
+properties/functionallity
+
+EXAMPLE:
+
+class Vehicle:
+    vehicle_name = 'Ferroryy'
+    vehicle_color = 'Black'
+
+print(Vehicle.vehicle_color)
+print(Vehicle.vehicle_name)
+
+2.OBJECT : IT IS A REAL WORLD ENTITY OR AN INSTANCE OF A CLASS
+
+# OBJECT CREATION:
+obj_name = Class_name(args) ==>#args are optional
+
+
+

@@ -27,18 +27,18 @@
 # these are the variables created inside the method space we can modify
 # them in method space but not inside the function
 
-def outer():
-    b = 43
-    c = 37
-    print(b,c)
-    def inner():
-        nonlocal b,c
-        m = 43
-        b = 60
-        c = 40
-        print(m,b,c)
-    inner()
-    print(b,c)
-outer()
+# def outer():
+#     b = 43
+#     c = 37
+#     print(b,c)
+#     def inner():
+#         nonlocal b,c
+#         m = 43
+#         b = 60
+#         c = 40
+#         print(m,b,c)
+#     inner()
+#     print(b,c)
+# outer()
 # if try to modify local variable inside the nested function it will not get modify
 #  to overcome this issue we will use 'nonlocal' keyword
