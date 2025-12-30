@@ -13,9 +13,9 @@
 
 #! 1.function with arguments and with return values
 
-def greet(name):
-    print("Good Morning",name)
-greet('Manohar!!')
+# def greet(name):
+#     print("Good Morning",name)
+# greet('Manohar!!')
 
 # def add(a,b):
 #     return a+b
@@ -38,7 +38,7 @@ greet('Manohar!!')
 # print(div(a,b))
 
 
-# ! 2.function with arguments withouot return values
+# ! 2.function with arguments without return values
 # def add(a,b):
 #     print(a+b)
 # add(100,200)
@@ -56,7 +56,7 @@ greet('Manohar!!')
 # div(x,y)
 
 
-#! 3.function withoout arguments and with retun values
+#! 3.function without arguments and with retun values
 
 # def add():
 #     a=eval(input("enter the 1st value :"))

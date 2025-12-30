@@ -71,11 +71,11 @@
 # syntax:
 # def fun(val1,val2,val3....valn):
 #     stmnt block
-# fun(*collectio)
+# fun(*collection)
 
-def display(val1,val2,val3,val4):
-    print(val1+val2+val3)
-display(*(10,20,30,40))
+# def display(val1,val2,val3,val4):
+#     print(val1+val2+val3)
+# display(*(10,20,30,40))
 
 
 
