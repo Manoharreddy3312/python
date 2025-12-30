@@ -232,7 +232,7 @@
 # emp3.emp_sal = 12000
 # # print(emp3.emp_name, emp3.emp_id, emp3.emp_sal, emp3.comp_name, emp3.comp_loc)
 
-# # now i want to create a function to initialize the object members
+# # # now i want to create a function to initialize the object members
 # def initialize(obj, emp_name, emp_id, emp_sal):
 #     obj.emp_name = emp_name
 #     obj.emp_id = emp_id
@@ -246,6 +246,123 @@
 # display(emp1)
 # display(emp2)
 # display(emp3)
+
+# !object methods:
+
+# class company():
+#     company_name = "meta"
+#     company_loc = "hyd"
+#     def __init__(self,emp_name,emp_id,emp_sal):
+#         self.emp_name = emp_name
+#         self.emp_id = emp_id
+#         self.emp_sal= emp_sal
+#     def dispaly_name(self):
+#         print(self.emp_name)
+#     def dispaly_id(self):
+#         print(self.emp_id)
+#     def dispaly_sal(self):
+#         print(self.emp_sal)
+#     def upd_sal(self,new_sal):
+#         self.emp_sal = new_sal
+
+#     @classmethod
+#     def disp_class(cls):
+#         print(cls.company_name,cls.company_loc)
+
+#     @classmethod
+#     def upd_loc(cls,new_loc):     
+#         cls.company_loc = new_loc
+
+# emp1=company("sai kiran","MT2024",200000)
+# emp1.dispaly_id()
+# emp1.dispaly_name()
+# emp1.dispaly_sal()
+# emp1.upd_sal(500000)
+# emp1.dispaly_sal()
+# company.disp_class()
+# company.upd_loc("BANGALORE")
+# company.disp_class()
+
+
+
+# !static method:
+
+# it is an method which id independent of object and class members
+# creation is done with the help of @staticmethod decorator
+# if calling is done with the help of self it becomes object/instance
+# static method
+# if calling is done with thehelp of cls it becomes class
+# static method
+
+
+
+# create one class with class_name as a Bank
+
+# class members:bank_name,bank_loc,bank_no_of_employees
+# object members:cust_name,cust_acc_no,cust_bal
+# object methods:display,deposit,withdraw,disp_balance
+# class methods:disp_class,upd_no_of_employees
+
+class Bank:
+    bank_name = "SBI Bank"
+    bank_loc = "Gachibowli"
+    bank_no_of_employees = 125
+
+    def __init__(self, cust_name, cust_acc_no, cust_bal):
+        self.cust_name = cust_name
+        self.cust_acc_no = cust_acc_no
+        self.cust_bal = cust_bal
+
+    def display(self):
+        print(f"Customer Name: {self.cust_name}, Account No: {self.cust_acc_no}")
+
+    def deposit(self, amount):
+        self.cust_bal += amount
+        print(f"Deposited: {amount}. New Balance: {self.cust_bal}")
+
+    def withdraw(self, amount):
+        if amount <= self.cust_bal:
+            self.cust_bal -= amount
+            print(f"Withdrawn: {amount}. New Balance: {self.cust_bal}")
+        else:
+            print("Insufficient Balance")
+
+    def disp_balance(self):
+        print(f"Current Balance: {self.cust_bal}")
+
+    @classmethod
+    def disp_class(cls):
+        print(f"Bank Name: {cls.bank_name}, Location: {cls.bank_loc}, No of Employees: {cls.bank_no_of_employees}")
+
+    @classmethod
+    def upd_no_of_employees(cls, new_count):
+        cls.bank_no_of_employees = new_count
+# Creating customer objects
+cust1 = Bank("sharan", "SBI1001", 5000.00)
+cust2 = Bank("shoban", "SBI1002", 10000.00)
+cust3 = Bank("sai", "SBI1003", 7500.00)
+# Using object methods
+cust1.display()
+cust1.deposit(2000)
+cust1.withdraw(1500)
+cust1.disp_balance()
+cust2.display()
+cust2.deposit(3000)
+cust2.withdraw(5000)
+cust2.disp_balance()
+cust3.display()
+cust3.deposit(1000)
+cust3.withdraw(8000)
+cust3.disp_balance()
+
+# Using class methods
+Bank.disp_class()
+Bank.upd_no_of_employees(150)
+Bank.disp_class()
+Bank.upd_no_of_employees(200)
+Bank.disp_class()
+
+
 
 
 

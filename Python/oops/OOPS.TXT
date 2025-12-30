@@ -39,3 +39,13 @@ obj_name = Class_name(args) ==>#args are optional
 
 
 
+# !static method:
+
+# it is an method which id independent of object and class members
+# creation is done with the help of @staticmethod decorator
+# if calling is done with the help of self it becomes object/instance
+# static method
+# if calling is done with thehelp of cls it becomes class
+# static method 
+
+
