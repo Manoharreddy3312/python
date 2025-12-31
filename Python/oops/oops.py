@@ -295,6 +295,7 @@
 # static method
 
 
+#! classmethod:
 
 # create one class with class_name as a Bank
 
@@ -303,65 +304,67 @@
 # object methods:display,deposit,withdraw,disp_balance
 # class methods:disp_class,upd_no_of_employees
 
-class Bank:
-    bank_name = "SBI Bank"
-    bank_loc = "Gachibowli"
-    bank_no_of_employees = 125
+# class Bank:
+#     bank_name = "SBI Bank"
+#     bank_loc = "Gachibowli"
+#     bank_no_of_employees = 125
 
-    def __init__(self, cust_name, cust_acc_no, cust_bal):
-        self.cust_name = cust_name
-        self.cust_acc_no = cust_acc_no
-        self.cust_bal = cust_bal
+#     def __init__(self, cust_name, cust_acc_no, cust_bal):
+#         self.cust_name = cust_name
+#         self.cust_acc_no = cust_acc_no
+#         self.cust_bal = cust_bal
 
-    def display(self):
-        print(f"Customer Name: {self.cust_name}, Account No: {self.cust_acc_no}")
+#     def display(self):
+#         print(f"Customer Name: {self.cust_name}, Account No: {self.cust_acc_no}")
 
-    def deposit(self, amount):
-        self.cust_bal += amount
-        print(f"Deposited: {amount}. New Balance: {self.cust_bal}")
+#     def deposit(self, amount):
+#         self.cust_bal += amount
+#         print(f"Deposited: {amount}. New Balance: {self.cust_bal}")
 
-    def withdraw(self, amount):
-        if amount <= self.cust_bal:
-            self.cust_bal -= amount
-            print(f"Withdrawn: {amount}. New Balance: {self.cust_bal}")
-        else:
-            print("Insufficient Balance")
+#     def withdraw(self, amount):
+#         if amount <= self.cust_bal:
+#             self.cust_bal -= amount
+#             print(f"Withdrawn: {amount}. New Balance: {self.cust_bal}")
+#         else:
+#             print("Insufficient Balance")
 
-    def disp_balance(self):
-        print(f"Current Balance: {self.cust_bal}")
+#     def disp_balance(self):
+#         print(f"Current Balance: {self.cust_bal}")
 
-    @classmethod
-    def disp_class(cls):
-        print(f"Bank Name: {cls.bank_name}, Location: {cls.bank_loc}, No of Employees: {cls.bank_no_of_employees}")
+#     @classmethod
+#     def disp_class(cls):
+#         print(f"Bank Name: {cls.bank_name}, Location: {cls.bank_loc}, No of Employees: {cls.bank_no_of_employees}")
 
-    @classmethod
-    def upd_no_of_employees(cls, new_count):
-        cls.bank_no_of_employees = new_count
-# Creating customer objects
-cust1 = Bank("sharan", "SBI1001", 5000.00)
-cust2 = Bank("shoban", "SBI1002", 10000.00)
-cust3 = Bank("sai", "SBI1003", 7500.00)
-# Using object methods
-cust1.display()
-cust1.deposit(2000)
-cust1.withdraw(1500)
-cust1.disp_balance()
-cust2.display()
-cust2.deposit(3000)
-cust2.withdraw(5000)
-cust2.disp_balance()
-cust3.display()
-cust3.deposit(1000)
-cust3.withdraw(8000)
-cust3.disp_balance()
+#     @classmethod
+#     def upd_no_of_employees(cls, new_count):
+#         cls.bank_no_of_employees = new_count
+# # Creating customer objects
+# cust1 = Bank("sharan", "SBI1001", 5000.00)
+# cust2 = Bank("shoban", "SBI1002", 10000.00)
+# cust3 = Bank("sai", "SBI1003", 7500.00)
+# # Using object methods
+# cust1.display()
+# cust1.deposit(2000)
+# cust1.withdraw(1500)
+# cust1.disp_balance()
+# cust2.display()
+# cust2.deposit(3000)
+# cust2.withdraw(5000)
+# cust2.disp_balance()
+# cust3.display()
+# cust3.deposit(1000)
+# cust3.withdraw(8000)
+# cust3.disp_balance()
 
-# Using class methods
-Bank.disp_class()
-Bank.upd_no_of_employees(150)
-Bank.disp_class()
-Bank.upd_no_of_employees(200)
-Bank.disp_class()
+# # Using class methods
+# Bank.disp_class()
+# Bank.upd_no_of_employees(150)
+# Bank.disp_class()
+# Bank.upd_no_of_employees(200)
+# Bank.disp_class()
 
+
+#! Staticmethod:
 
 
 
