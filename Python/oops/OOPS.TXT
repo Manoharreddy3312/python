@@ -47,5 +47,58 @@ obj_name = Class_name(args) ==>#args are optional
 # static method
 # if calling is done with thehelp of cls it becomes class
 # static method 
+////==============================================================================================
+
+TYPES OF OOPS:
+=============   
+
+1.INHERITANCE:
+=============
+- IT IS AN PROCESS IN WHICH THE CHILD/SUB/DERIVE CLASS WILL ACQUIRE THE PROPERTY FROM PARENT/SUPER/BASE CLASS
 
 
+
+                    CLASS-A ==> PARENT/SUPER/BASE CLASS
+                      |
+                      |
+                    CLASS -B ==>CHILD/SUB/DERIVE
+
+
+TYPES OF INHERITANCE:  5-types
+=====================
+
+1.SINGLE-LEVEL INHERITANCE
+2.MULTI-LEVEL INHERITANCE
+3.MULTIPLE INHERITANCE
+4.HEIRARICAL INHERITANCE
+5.HYBRID INHERITANCE
+
+
+1.SINGLE-LEVEL INHERITANCE:
+==========================
+=> IT IS AN PROCESS IN WHICH THE CHILD/SUB/DERIVE CLASS WILL ACQUIRE THE PROPERTY FROM PARENT/SUPER/BASE CLASS 
+
+syntax:
+======
+    class Parent:
+        properties/functionality
+    class Child(Parent):
+        properties/functionality
+        
+                    CLASS-A ==> PARENT/SUPER/BASE CLASS
+                      |
+                      |
+                    CLASS -B ==>CHILD/SUB/DERIVE CLASS
+
+#============================================================================
+# ! 3.Multiple inheritance:
+# ========================
+# this is a type of inheritance where multiple parent have single child
+
+
+                 CLASS-A              CLASS-B
+                        \             /
+                         \           /
+                          \         /  
+                           \       /
+                            CLASS-C
