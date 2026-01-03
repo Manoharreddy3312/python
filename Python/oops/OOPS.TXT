@@ -102,3 +102,79 @@ syntax:
                           \         /  
                            \       /
                             CLASS-C
+
+
+#============================================================================
+#============================================================================
+
+#! HIERARICHAl INHERITANCE:
+# ========================
+
+#  it is an concept where parent and multiple child are present
+
+
+                    class - A
+                       |
+      --------------------------------------------
+      class-B      class-c     class-D      class-E
+
+
+      syntax:
+      =======
+
+  class A: 
+    properties
+
+  class B(A): 
+    properties
+
+  class C(A): 
+    properties
+
+  class D(A): 
+    properties
+
+  class E(A): 
+    properties
+#============================================================================
+
+# ! HYBRID INHERITANCE:
+=======================
+
+# IT IS AN COMBINATION OF MORE THAN TWO TYPE OF INHERITANCE
+
+                            CLASS-A      
+    ---------------------------------------------------------                   
+    CLASS-B                                               CLASS-C
+  -----------                                            ---------------
+  CLASS-D                                              CLASS-F    CLASS-G
+    |
+  CLASS-E                                             
+
+
+syntax:
+========
+
+class A:
+  properties
+class B(A):
+  properties
+class C(A):
+  properties
+class D(B):
+  properties
+class E(D):
+  properties
+class F(C):
+  properties
+class G(C):
+  properties
+
+
+
+
+
+
+
+
+

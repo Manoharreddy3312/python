@@ -208,6 +208,170 @@
 
 
 # ============================================================================
-#! HIERARICHAR INHERITANCE:
+#! HIERARICHAl INHERITANCE:
 # ========================
+
+#  it is an concept where parent and multiple child are present
+
+
+# class Animal:
+#   def hunt(self):
+#     print('animal is hunting')
+
+# class Dog(Animal):
+#   def eat(self):
+#     print('dog is eating')
+
+# class lion(Animal):
+#   def eat(self):
+#     print('lion is eating')
+
+# obj1 = Animal()
+# # obj1.eat()
+# obj1.hunt()
+# obj2 = lion()
+# obj2.eat()
+
+
+# create a example for hierarichal inheritance
+
+# class Vehicle:
+#     def start(self):
+#         print('vehicle started')
+# class Car(Vehicle):
+#     def drive(self):
+#         print('car is driving')
+# class Bike(Vehicle):
+#     def ride(self):
+#         print('bike is riding')
+# v1 = Vehicle()
+# v1.start()
+# c1 = Car()
+# c1.drive()
+# c1.start()
+# b1 = Bike()
+
+
+
+# class Company:
+#   def __init__(self,emp_name,emp_id):
+#     self.emp_name=emp_name
+#     self.emp_id=emp_id
+
+#   def display(self):
+#     print(self.emp_name,self.emp_id)
+
+# class Development(Company):
+#   def dev(self):
+#     print('this is development team')
+
+# class Testing(Company):
+#   def test(self):
+#     print('this is testing team')
+
+# class Hr(Company):
+#   def hr(self):
+#     print('this is HR team')
+
+
+# emp1=Development('Sharan',5423)
+# emp1.display()
+# emp1.dev()
+
+# emp2 = Testing('Shubranshu',2093)
+# emp2.display()
+# emp2.test()
+
+# emp3 = Testing('Shreya',1003)
+# emp3.display()
+# emp3.test()
+
+
+
+# class Amazon:
+#   def __init__(self,cust_name,cust_mobile_number):
+#     self.cust_name=cust_name
+#     self.cust_mobile_number=cust_mobile_number
+
+#   def display(self):
+#     print(self.cust_name,self.cust_mobile_number)
+
+# class Amazon_prime(Amazon):
+#   def ap(self):
+#     print('this is Amazon Prime team')
+
+# class Amazon_audible(Amazon):
+#   def aa(self):
+#     print('this is Amazon Audible team')
+
+# class Amazon_music(Amazon):
+#   def am(self):
+#     print('this is Amazon Music team')\
+    
+# class Amazon_pay(Amazon):
+#   def apay(self):
+#     print('this is Amazon Pay team')
+
+
+# cust1=Amazon_prime('Sharan',9087675467)
+# cust1.display()
+# cust1.ap()
+
+# cust2 = Amazon_audible('Shubranshu',7896458721)
+# cust2.display()
+# cust2.aa()
+
+# cust3 = Amazon_music('Shreya',9075784323)
+# cust3.display()
+# cust3.am()
+
+# cust4 = Amazon_pay('Veena',8579646775)
+# cust4.display()
+# cust4.apay()
+
+
+# ! HYBRID INHERITANCE:
+
+# IT IS AN COMBINATION OF MORE THAN TWO TYPE OF INHERITANCE
+
+
+class Person:
+  def walk(self):
+    print('person is walking')
+
+class Student(Person):
+  def study(self):
+    print('student is reading books')
+
+class Engineering(Student):
+  def proj(self):
+    print('working on major project')
+
+class Medical(Student):
+  def proj(self):
+    print('project on botany')
+
+class AIresearch(Engineering,Medical):
+  def research(self):
+    print('research on disease prediction')
+
+obj1 = Person()
+obj2 = Student()
+obj3 = Engineering()
+obj4 = Medical()
+obj5 = AIresearch()
+obj1.walk()
+obj2.walk()
+obj2.study()
+obj3.walk()
+obj3.study()
+obj3.proj()
+obj4.walk()
+obj4.study()
+obj4.proj()
+obj5.walk()
+obj5.study()
+obj5.proj()
+obj5.research()
+obj5.proj()  # it will call the properties of first inherited class i.e Engineering class
 
