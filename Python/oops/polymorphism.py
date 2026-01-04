@@ -31,14 +31,39 @@
 # ==> '+' it wii perform addition wiyh S.V.D and concatination with M.V.D
 
 
-a= 10
-b = 20
-print(a+b)
+# a= 10
+# b = 20
+# print(a+b)
 
 
-m = 'string'
-n = 'isi M.V.D'
-print(m+n)
+# m = 'string'
+# n = ' is it M.V.D'
+# print(m+n)
+
+# ! monkey 
+# def add(a,b):
+#     print(a+b)
+# a1 = add
+# def add():
+#     print('Polymorphism')
+# a2 = add
+# def name(a,b,c):
+#     print(a+b+c)
+
+
+# ! magic method:
+class A:
+    def __init__(self,a):
+        self.a = a
+    def __add__(self,other):
+        return self.a+other.a
+    
+    def __sub__(self,other):
+        return self.a-other.a
+ob = A(50)
+ob1 = A(20)
+print(ob+ob1)
+print(ob-ob1)
 
 
 

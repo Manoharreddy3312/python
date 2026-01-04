@@ -170,11 +170,202 @@ class F(C):
 class G(C):
   properties
 
+==========================================================================================
+
+POLYMORPHISM:
+==============
+# print("plymrsm")
+
+# Many forms
+# it is an phenomena where one method or function shows different behaviour with different object
+
+
+#   1.method overloading
+#   2.Operator overloading(method overriding)
+
+#!   1.method overloading:
+
+# method overloading is not possible due to method overriding
+
+
+#! 2.Operator overloading:
+==========================
+
+# ==> '+' it will perform addition wiyh S.V.D and concatination with M.V.D
+
+==> it is a phenomenon of making the operator to work on more Than one functionality
+
+              +
+              |\
+      addition    concatination 
+
++ operatorwork in two ways
+
+1.single value datatype-- it works as addition
+2.MULTI value datatypes -- it works as concatination
+
+-IF WE TRY TO perform method overloading method overriding WILL BE HAPPEN
+- to avoid method overriding we will use MONKEY PATCHING
+
+
+class A:
+    def __init__(self,a):
+        self.a = a
+ob = A(10)
+ob1 = A(20)
+print(ob+ob1)
+
+==> we cannot perform any operation on the oobject of user define class
+==> to perform operation on objects of user defined class we have to magic methods
+
+using magic method:
+==================
+class A:
+    def __init__(self,a):
+        self.a = a
+    def __add__(self,other):
+        return self.a+other.a
+    
+    def __sub__(self,other):
+        return self.a-other.a
+ob = A(50)
+ob1 = A(20)
+print(ob+ob1)
+print(ob-ob1)
+
+note:
+=====
+==> in python operator overloading nothing but making the objects of user defined class to work with the operators
+
+OPERATION                OPERATOR                    METHOD 
+=========               ==========                  ========
+
+addition                  ob1+ob2                    ob1.__add__(ob2)
+
+subtraction               ob1-ob2                    ob1.__sub__(ob2)
+
+multiplication            ob1*ob2                    ob1.__mul__(ob2)
+
+Truedivision              ob1/ob2                    ob1.__truediv--(ob2)
+
+floredivision             ob1//ob2                    ob1.__truediv--(ob2)
+
+modulusdivision   
+
+bitwiseAND               ob1&obj2                     ob1.__and__(obj2)
+
+bitwiseOR                 ob1|oobj2                  ob1.__or__(ob2)
+
+bitwiseNOT               ob1~obj2                   ob1.__invert__()
+
+bitwiseXor              ob1^obj2                     ob1.__xor__(ob2)
+
+bitwise<<                ob1<<obj2                   ob1.__<<__(ob2)
+
+bitwise>>               ob1>>obj2                   ob1.__>>__(ob2)
+
+equalsto                 ob1==obj2                   ob1.__eq__(ob2)
+
+notequalsto              ob1!=obj2                 ob1.__ne__(ob2)
+
+greaterthan                ob1>obj2                   ob1.__gt__(ob2)
+
+greaterorequals           ob1>=obj2                   ob1.__gte__(ob2)
+
+lessthan                  ob1<obj2                   ob1.__lt__(ob2)
+
+lessthanorequals           ob1<=obj2                   ob1.__lte__(ob2)
+
+
+assignmentaddition           ob1+=ob2                      ob1.__idd__(ob2)
+
+assignmentsubtraction        ob1-=ob2                      ob1.__isub__(ob2)
 
 
 
+==>MONKEY PATCHING:
+===================
+
+==> it a phenomena of passing address of the function to a variable
+
+var = function_name:
 
 
+EXAMPLE:
+=======
 
+def add(a,b):
+    print(a+b)
+a1 = add
+def add():
+    print('Polymorphism')
+a2 = add
+def name(a,b,c):
+    print(a+b+c)
+
+
+output:
+======
+a1(10,20)
+>>>30
+>>>a2()
+Polymorphism
+>>>add(1,2,3) 
+6
+>>>a=len
+>>>a('hello')
+5
+
+==============================================================
+ENCAPSULATION:
+=============
+=> it is a phenomenon of providing the security to the data members present in the class
+ we need ENCAPSULATION to restric the access of class properties from the users
+ to provide the security we will be mainly using 3- types of  specifiers
+
+1. Public access specifier
+2. Private access specifier
+3.Protucted access specifier
+ 
+1. Public access specifier:
+===========================
+
+==> it is a type of access specifier which gives the access to use class properties
+ both inside and outside of the class
+
+==> we can modify the members of the class 
+==> by default all the methods and variables present inside the class will act as public access specifiers
+
+syntax:
+=======
+class Class_name:
+    var = value
+def mname(self,args):
+  Sb 
+@classmethod
+def mname(cls,args):
+  Sb
+@staticmethod
+def mname(args):
+  sb
+
+3.Protucted access specifier:
+==============================
+==> it is a  type of access specifier which acts as public access specifiers
+==> but in this access specifier we wil just warn the user to not use the methods variables present inside the class
+==> we can access THE method and members of the class even out side the class but it is restricted
+
+syntax:
+=======
+class Class_name:
+    _var = value
+def mname(self,args):
+  Sb 
+@classmethod
+def mname(cls,args):
+  Sb
+@staticmethod
+def mname(args):
+  sb
 
 
