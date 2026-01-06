@@ -68,6 +68,7 @@
 
 # print(st1.__collegefees) # outside class we cannot access private access specifier
 
+# =======================================================================================
 
 # class Company:
 #   comp_name='infosys'
@@ -95,7 +96,7 @@
 # # print(emp1.__emp_sal)
 # print(emp1.get_sal())
 # print(Company.get_emp_count())
-
+# ==========================================================================
 
 # class School:
 #     scl_name = 'K.V'
@@ -144,8 +145,187 @@
 # print(st1.get_fees())
 # print(st1.get_id())
 
+# ============================================================================
+# class Animal:
+#     animal_loc = "lumbini"
+#     __animal_count = 45
+
+#     def __init__(self,name,food,breed):
+#         self.name = name
+#         self.__food = food
+#         self.__breed = breed
+
+#     @property
+#     def food(self):
+#         return self.__food
+    
+#     @property
+#     def breed(self):
+#         return self.__breed
+    
+#     @food.setter
+#     def food(self,new_food):
+#         self.__food=new_food
+#     @breed.setter
+#     def breed(self,new_breed):
+#         self.__breed=new_breed
+
+#!----- using Getter and setter properties
+#     def get_food(self):
+#         return self.__food
+#     def set_food(self,new_food):
+#         self.__food=new_food
+#         return self.__food
+#     @classmethod
+#     def get_animal_count(cls):
+#         return cls.__animal_count
+#     @classmethod
+#     def set_animal_count(cls,new_count):
+#         cls.__animal_count=new_count
+#         return cls.__animal_count
+# ob1=Animal('lion','meat')
+# ob2 =Animal('deer','grass')
+# print(ob1.animal_loc)
+# # print(ob1.__animal_count) # Error
+# print(ob1.name)
+# print(ob2.name)
+# # print(ob1.__food) # Error
+# print(ob1.get_food())
+# print(ob2.get_food())
+# print(Animal.get_animal_count())
+
+# ob1 = Animal('lion','Meet','Asiastic lion')
+# # ob1.food()
+# # ob1.breed()
+
+# print(ob1.food)
+# print(ob1.breed)
+
+# ob1.food = 'deer'
+# print(ob1.food)
+
+# ob1.breed = 'indian'
+# print(ob1.breed)
 
 
 
-#! Private access specifiers:
-# to make any datamember or method private it got assigned with double underscore(__) .
+# ===============================================================================
+
+#! using property decorator
+# steps:
+# 1.method should me attach with @property decorator
+# # 2.method name should be same as variable
+
+# To Modify:
+# 1.@var.setter
+# 2.method name should be same as variable name
+
+# ==================================================================================
+
+# ===================================================================================
+
+# class Animal:
+#     def __init__(self, name, food, breed):
+#         self.name = name
+#         self._food = food
+#         self.__breed = breed
+
+#     @property
+#     def breed(self):
+#         return self.__breed
+
+#     @property
+#     def food(self):
+#         return self._food
+
+# animal1 = Animal("Tiger", "Meat", "Siberian")
+# print(animal1.breed)
+# print(animal1.food)
+# print(animal1.name)
+
+
+# ===================================================================================
+# class Animal:
+#     animal_loc = "lumbini"
+#     __animal_count = 45
+
+#     def __init__(self, name, food, breed):
+#         self.name = name
+#         self.__food = food
+#         self.__breed = breed
+
+#     @property
+#     def breed(self):
+#         return self.__breed
+
+#     @property
+#     def food(self):
+#         return self.__food
+
+# animal1 = Animal("Tiger", "Meat", "Siberian")
+# print(animal1.breed)
+# print(animal1.name)
+# print(animal1.food)
+
+
+# ===================================================================================
+
+class School:
+    scl_name = 'K.V'
+    __scl_fees = 5000
+
+    def name(self,st_name,st_id,stmarks,stphno):
+     self.st_name = st_name
+     self.st_st_id = st_id
+     self.__stmarks=stmarks
+     self.__stphno=stphno
+
+    @property
+    def stmarks(self):
+        return self.__stmarks
+    @stmarks.setter
+    def stmarks(self,new_marks):
+        self.__stmarks=new_marks
+    @property
+    def stphno(self):
+        return self.__stphno
+    @stphno.setter
+    def stphno(self,new_phno):
+        self.__stphno=new_phno
+st1 = School()
+st1.name('KL RAHUL','7865','890','9876543210') 
+print(st1.st_name)
+print(st1.scl_name)
+print(st1.stmarks)
+st1.stmarks = '480'
+print(st1.stmarks)
+print(st1.stphno)
+st1.stphno = '9123456780'
+print(st1.stphno)
+
+
+# Accessing class members:
+
+# 1. Public members - accessible anywhere
+print(st1.scl_name)  # Access public class variable
+print(st1.st_name)   # Access public instance variable
+
+# Use properties/methods to access private members
+print(st1.stmarks)    # Access via @property decorator
+print(st1.stphno)     # Access via @property decorator
+
+# Modify private members via setters
+st1.stmarks = '500'
+st1.stphno = '9999999999'
+print(st1.stmarks)
+print(st1.stphno)
+
+
+
+
+
+
+
+
+
+

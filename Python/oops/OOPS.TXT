@@ -367,5 +367,39 @@ def mname(cls,args):
 @staticmethod
 def mname(args):
   sb
+====================================================================================
+ABSTRACTION:
+===========
+
+-> IT IS AN PROCESS TO HIDE THE IMPLEMENTATION AND EXPOSING THE FUNCTIONALITY
+
+-> WE CAN ACHIVE ABSTRACTION WITH:
+
+1.ABSTRACTION METHOD (@ABSTRACTMETHOD)
+2.ABSTRACT CLASS
+3.CONCRETE CLASS
 
 
+1.ABSTRACTION METHOD:
+====================
+
+these are the method which have method declaration but no definition
+
+syntax:
+=======
+
+@abstractmethod
+def method_name(): ==> (method declaration)
+  pass ==> (method definition)
+
+
+2.ABSTRACT CLASS:
+=================
+->if any class is having atleast one abstractmethod that class is abstract class
+->we cannot create an object of abstract class
+
+
+
+3.CONCRETE CLASS:
+=================
+->
