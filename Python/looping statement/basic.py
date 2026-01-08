@@ -97,11 +97,12 @@
 
 #wap to check the given number is perfect number or not??
 # defination:
-# here sum of proper factors of a number should have to be equals to the original number itself''
+# here sum of proper factors of a number should have to be equals to the original number itself
+
 # n=int(input('enter a number:'))
 # i=1
 # sum=0
-# while i<n:
+# while i<=n:
 #     if n%i==0:
 #         sum+=i
 #     i+=1
