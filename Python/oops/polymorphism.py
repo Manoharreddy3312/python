@@ -28,7 +28,7 @@
 
 #! 2.Operator overloading:
 
-# ==> '+' it wii perform addition wiyh S.V.D and concatination with M.V.D
+# ==> '+' it wii perform addition wiyh S.V.D() and concatination with M.V.D()
 
 
 # a= 10

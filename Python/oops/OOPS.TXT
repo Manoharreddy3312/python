@@ -32,7 +32,8 @@ class Vehicle:
 print(Vehicle.vehicle_color)
 print(Vehicle.vehicle_name)
 
-2.OBJECT : IT IS A REAL WORLD ENTITY OR AN INSTANCE OF A CLASS
+2.OBJECT : 
+==> IT IS A REAL WORLD ENTITY OR AN INSTANCE OF A CLASS
 
 # OBJECT CREATION:
 obj_name = Class_name(args) ==>#args are optional
@@ -40,14 +41,15 @@ obj_name = Class_name(args) ==>#args are optional
 
 
 # !static method:
-
+=================
 # it is an method which id independent of object and class members
 # creation is done with the help of @staticmethod decorator
 # if calling is done with the help of self it becomes object/instance
 # static method
-# if calling is done with thehelp of cls it becomes class
+# if calling is done with the help of class it becomes class
 # static method 
-////==============================================================================================
+
+//=======================================================================================================
 
 TYPES OF OOPS:
 =============   
@@ -59,8 +61,8 @@ TYPES OF OOPS:
 
 
                     CLASS-A ==> PARENT/SUPER/BASE CLASS
-                      |
-                      |
+                       |
+                       |
                     CLASS -B ==>CHILD/SUB/DERIVE
 
 
@@ -103,8 +105,6 @@ syntax:
                            \       /
                             CLASS-C
 
-
-#============================================================================
 #============================================================================
 
 #! HIERARICHAl INHERITANCE:
@@ -116,6 +116,7 @@ syntax:
                     class - A
                        |
       --------------------------------------------
+      |               |           |             |
       class-B      class-c     class-D      class-E
 
 
@@ -174,8 +175,6 @@ class G(C):
 
 POLYMORPHISM:
 ==============
-# print("plymrsm")
-
 # Many forms
 # it is an phenomena where one method or function shows different behaviour with different object
 

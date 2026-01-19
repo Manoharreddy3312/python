@@ -14,9 +14,9 @@
 #     print(kwargs)
 # dic_packing(name="SUBHRANSHU",loc="KONDAPUR",GRAD_MARKS = "8.4CGPA")
 
-# Types Of Arguments
+#! Types Of Arguments
 
-# 1) Positional Arguments
+#! 1) Positional Arguments
 # def func(a,b):
 #     return a+b
 # print(func(10,20))
@@ -26,7 +26,7 @@
 # print(div(20,0))
 # div (20,0) error
 
-# 2) Keyword Arguments
+#! 2) Keyword Arguments
 # name = (input("Enter your name: "))
 # loc = (input("Enter your location: "))
 # def display(name,loc):
@@ -47,7 +47,7 @@
 #     print("Blood group:",blood_grp.capitalize())
 # display(name,loc,address,dob,blood_grp)
 
-# 3) Default Aguments
+#! 3) Default Aguments
 # def details(name,loc="Hyderabad"):
 #     print("name is:",name)
 #     print("location is:",loc)
@@ -61,7 +61,7 @@
 #         print("not a valid deposit amount,deposit atleast rupees 500")
 # bank("subhranshu",6545154,500)
 
-# 4) length Arguments
+#! 4) length Arguments
 
 # def items_cart(*args):
 #     print(args)

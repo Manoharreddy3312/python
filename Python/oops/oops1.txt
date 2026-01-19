@@ -1,0 +1,127 @@
+1️⃣ Advantages of OOPS (Object Oriented Programming)
+
+OOPS makes programs easy to understand, manage, and reuse.
+
+✅ Main Advantages
+
+1.Code Reusability
+
+2.Write code once and reuse it using classes and objects.
+
+3.Saves time and effort.
+
+4.Modularity
+
+5.Program is divided into small parts (classes).
+
+6.Easy to debug and maintain.
+
+Security
+
+Data can be hidden using access control (private/protected).
+
+Prevents accidental modification.
+
+Easy Maintenance
+
+Changes in one class do not affect other parts.
+
+Real-World Mapping
+
+Objects represent real-world entities (Student, Car, Bank).
+
+2️⃣ Class & Object
+🔹 Class
+=================
+A class is a blueprint or template.
+
+It defines properties (variables) and methods (functions).
+
+🔹 Object
+==============
+
+An object is an instance of a class.
+
+It represents real data.
+
+📌 Example:
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display(self):
+        print(self.name, self.age)
+
+# Object creation
+s1 = Student("Manohar", 22)
+s1.display()
+
+🔍 Explanation
+
+Student → Class
+
+s1 → Object
+
+name, age → Properties
+
+display() → Method
+
+3️⃣ Types of Properties (Variables) in Python Class
+====================================================
+1️⃣ Instance Variables
+=======================
+Belong to object
+
+Defined using self
+
+Each object has its own copy
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name        # instance variable
+        self.salary = salary    # instance variable
+
+2️⃣ Class Variables (Static Variables)
+======================================
+Belong to class
+
+Shared by all objects
+
+class Company:
+    company_name = "Google"   # class variable
+
+    def show(self):
+        print(self.company_name)
+
+3️⃣ Public Properties
+======================
+Can be accessed anywhere
+
+Default access in Python
+
+class Demo:
+    x = 10   # public variable
+
+4️⃣ Protected Properties
+===========================
+Should be accessed inside class & child class
+
+Prefix with single underscore _
+
+class Demo:
+    _y = 20   # protected variable
+
+5️⃣ Private Properties
+======================
+Cannot be accessed outside class
+
+Prefix with double underscore __
+
+class Demo:
+    def __init__(self):
+        self.__z = 30   # private variable
+
+    def show(self):
+        print(self.__z)
