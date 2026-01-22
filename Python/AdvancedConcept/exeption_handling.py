@@ -78,32 +78,41 @@ finally:
 
 # ! Specific exeception handling
 
-try:
+# try:
 
-    a = eval(input("Enter The Number 1:"))
-    b = eval(input("Enter The Number 2: "))
-    print(a/b)
+#     a = eval(input("Enter The Number 1:"))
+#     b = eval(input("Enter The Number 2: "))
+#     print(a/b)
 
-except ZeroDivisionError:
-    print("dont divide number by zero")
-except TypeError:
-    print("Give appropriate type")
-print("hello")
+# except ZeroDivisionError:
+#     print("dont divide number by zero")
+# except TypeError:
+#     print("Give appropriate type")
+# print("hello")
 
 
 #! Generic Exeception handling
 
+# try:
+#     a = eval(input("Enter The Number 1:"))
+#     b = eval(input("Enter The Number 2: "))
+#     print(a/b)
+
+# except Exception as e:
+#     print("e")   #! it will print the discription of the respective error
+# print("hello")
+
+
+#! Default Exception Handling
+
 try:
     a = eval(input("Enter The Number 1:"))
     b = eval(input("Enter The Number 2: "))
     print(a/b)
 
-except Exception as e:
-    print("e")   #! it will print the discription of the respective error
+except:
+    print("error handling")
 print("hello")
-
-
-
 
 
 
