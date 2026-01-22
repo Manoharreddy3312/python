@@ -86,7 +86,21 @@ try:
 
 except ZeroDivisionError:
     print("dont divide number by zero")
-    print(hello)
+except TypeError:
+    print("Give appropriate type")
+print("hello")
+
+
+#! Generic Exeception handling
+
+try:
+    a = eval(input("Enter The Number 1:"))
+    b = eval(input("Enter The Number 2: "))
+    print(a/b)
+
+except Exception as e:
+    print("e")   #! it will print the discription of the respective error
+print("hello")
 
 
 
