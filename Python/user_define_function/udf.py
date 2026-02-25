@@ -12,7 +12,7 @@
 # function()   ==> function calling
 
 #! 1.function with arguments and with return values
-
+# 
 # def greet(name):
 #     print("Good Morning",name)
 # greet('Manohar!!')
@@ -49,11 +49,11 @@
 # sub(10,7)
 # sub(4,3)
 
-# x= eval(input("Enter a 1 value: "))
-# y = eval(input("Enter a 2 value: "))
-# def div(x,y):
-#     print(x/y)
-# div(x,y)
+x= eval(input("Enter a 1 value: "))
+y = eval(input("Enter a 2 value: "))
+def sub(x,y):
+    print(x-y)
+sub(x,y)
 
 
 #! 3.function without arguments and with retun values
