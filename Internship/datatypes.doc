@@ -1,0 +1,326 @@
+🔹 1. Single-Valued Data Types :
+==================================
+
+👉 Each variable holds only one value, so they are called single-valued.
+These store only one value at a time.
+
+✅ Types:
+int : Number without decimal point... it ranges  neg infinity to pos infinity
+
+float : Number with decimal point... it ranges  neg infinity to pos infinity
+
+complex : these are Numbers with the combination of real and imaginary parts
+	  it witch ranges from  neg infinity to pos infinity with including 'oj'.
+
+bool : Boolean consists of two values True or False
+
+NoneType : it is a values which is used to store empty space in the memory block
+
+📌 Examples:
+a = 10          # int (single value)
+b = 10.5        # float
+c = 2 + 3j      # complex
+d = True        # boolean
+e = None        # no value
+
+
+
+
+🔹 2. Multi-Valued Data Types :
+===============================
+👉 Each of these stores multiple values, so they are called multi-valued.
+
+These store multiple values in one variable.
+
+✅ Types:
+==========
+
+1. String :(string is also multi-valued because it stores multiple characters)
+    => string is a collection of characters.
+    => it is a sequence of characters enclosed in single, double, or triple quotes.
+    => it is immutable, which means once a string is created, it cannot be changed.
+    => it supports various operations like concatenation, slicing, and formatting.
+    => it is widely used for storing and manipulating text data.
+
+Examples of String:
+s1 = 'Hello'        # using single quotes
+s2 = "World"        # using double quotes
+s3 = '''Python'''    # using triple quotes
+
+message = s1 + ' ' + s2  # Concatenation of strings
+print(message)  # Output: Hello World
+
+name = 'Manohar'
+greeting = f'Hello, {name}!'  # Using f-string for formatting
+print(greeting)  # Output: Hello, Manohar!
+
+methods for string manipulation give each method with example:
+- upper() : converts all characters in the string to uppercase.
+  example: s = 'hello'
+           print(s.upper())  # Output: HELLO
+
+- lower() : converts all characters in the string to lowercase.
+  example: s = 'HELLO'
+           print(s.lower())  # Output: hello
+
+- strip() : removes any leading and trailing whitespace from the string.
+    example: s = '   hello   '
+             print(s.strip())  # Output: 'hello'
+
+- replace() : replaces a specified substring with another substring.
+    example: s = 'hello world'
+             print(s.replace('world', 'python'))  # Output: 'hello python'
+
+- split() : splits the string into a list of substrings based on a specified    delimiter.
+    example: s = 'hello world'
+             print(s.split())  # Output: ['hello', 'world']
+
+- join() : joins a list of strings into a single string using a specified delimiter.
+    example: words = ['hello', 'world']
+             print(' '.join(words))  # Output: 'hello world'
+
+- find() : returns the lowest index of the substring if it is found in the string, otherwise returns -1.
+    example: s = 'hello world'
+             print(s.find('world'))  # Output: 6
+             print(s.find('python'))  # Output: -1
+
+- count() : returns the number of occurrences of a substring in the string.
+    example: s = 'hello world'
+             print(s.count('o'))  # Output: 2
+             print(s.count('python'))  # Output: 0
+
+- startswith() : returns True if the string starts with a specified substring, otherwise returns False.
+    example: s = 'hello world'
+             print(s.startswith('hello'))  # Output: True
+             print(s.startswith('world'))  # Output: False
+
+- endswith() : returns True if the string ends with a specified substring, otherwise returns False.
+    example: s = 'hello world'
+             print(s.endswith('world'))  # Output: True
+             print(s.endswith('hello'))  # Output: False
+
+- isalpha() : returns True if all characters in the string are alphabetic, otherwise returns False.
+    example: s = 'hello'
+             print(s.isalpha())  # Output: True
+             s2 = 'hello123'
+             print(s2.isalpha())  # Output: False
+
+- isdigit() : returns True if all characters in the string are digits, otherwise returns False.
+    example: s = '123'
+             print(s.isdigit())  # Output: True
+                s2 = '123abc'
+                print(s2.isdigit())  # Output: False
+
+- isalnum() : returns True if all characters in the string are alphanumeric, otherwise returns False.
+    example: s = 'hello123'
+             print(s.isalnum())  # Output: True
+             s2 = 'hello 123'
+             print(s2.isalnum())  # Output: False
+            
+
+
+
+
+
+2. List :
+  
+    => list is a collection of items which are ordered and changeable (mutable).
+    => it allows duplicate members.
+    => it is defined by enclosing the items in square brackets [].
+
+example of list:
+my_list = [1, 2, 3, 4, 5] # This is a list of integers
+my_list2 = ['apple', 'banana', 'cherry'] # This is a list of strings
+my_list3 = [1, 'apple', 3.14, True] # This is a list with mixed data types
+my_list4 = [] # This is an empty list
+
+methods for list manipulation give each method with example:
+- len() : returns the number of items in the list.
+  example: my_list = [1, 2, 3, 4, 5]
+           print(len(my_list))  # Output: 5
+
+
+- append() : adds an item to the end of the list.
+  example: my_list = [1, 2, 3]
+           my_list.append(4)
+           print(my_list)  # Output: [1, 2, 3, 4]
+
+- insert() : adds an item at a specified position in the list.
+  example: my_list = [1, 2, 3]
+              my_list.insert(1, 4)  # Insert 4 at index 1
+              print(my_list)  # Output: [1, 4, 2, 3]    
+- remove() : removes the first occurrence of a specified item from the list.
+  example: my_list = [1, 2, 3, 4]
+           my_list.remove(2)
+           print(my_list)  # Output: [1, 3, 4]
+
+- pop() : removes and returns the item at a specified index (default is the last item).
+  example: my_list = [1, 2, 3, 4]   
+              item = my_list.pop(1)  # Remove item at index 1
+              print(item)  # Output: 2
+              print(my_list)  # Output: [1, 3, 4]   
+- clear() : removes all items from the list.
+    example: my_list = [1, 2, 3, 4]
+             my_list.clear()
+             print(my_list)  # Output: []
+
+- index() : returns the index of the first occurrence of a specified item in the list.
+    example: my_list = [1, 2, 3, 4]
+             print(my_list.index(3))  # Output: 2
+
+- count() : returns the number of occurrences of a specified item in the list.
+    example: my_list = [1, 2, 3, 2, 4]
+             print(my_list.count(2))  # Output: 2
+
+- sort() : sorts the items in the list in ascending order.
+    example: my_list = [3, 1, 4, 2]
+             my_list.sort()
+             print(my_list)  # Output: [1, 2, 3, 4]
+
+- reverse() : reverses the order of the items in the list.
+    example: my_list = [1, 2, 3, 4]
+             my_list.reverse()
+             print(my_list)  # Output: [4, 3, 2, 1]
+
+
+
+
+
+
+
+
+
+
+
+
+3. Tuple :
+
+    => tuple is a collection of items which are ordered and unchangeable (immutable).
+    => it allows duplicate members.
+    => it is defined by enclosing the items in parentheses ().
+
+example of tuple:
+my_tuple = (1, 2, 3, 4, 5) # This is a tuple of integers
+my_tuple2 = ('apple', 'banana', 'cherry') # This is a tuple of strings
+my_tuple3 = (1, 'apple', 3.14, True) # This is a tuple with mixed data types
+my_tuple4 = () # This is an empty tuple
+
+methods for tuple manipulation give each method with example:
+- len() : returns the number of items in the tuple.
+  example: my_tuple = (1, 2, 3, 4, 5)
+           print(len(my_tuple))  # Output: 5
+
+- index() : returns the index of the first occurrence of a specified item in the tuple.
+    example: my_tuple = (1, 2, 3, 4)
+             print(my_tuple.index(3))  # Output: 2
+
+- count() : returns the number of occurrences of a specified item in the tuple.
+    example: my_tuple = (1, 2, 3, 2, 4)
+             print(my_tuple.count(2))  # Output: 2
+
+
+
+
+
+4. Set :
+    => set is a collection of unique items which are unordered and unindexed.
+    => it allows duplicate members.
+    => it is defined by enclosing the items in curly braces {}.
+
+example of set:
+my_set = {1, 2, 3, 4, 5} # This is a set of integers
+my_set2 = {'apple', 'banana', 'cherry'} # This is a set of strings
+my_set3 = {1, 'apple', 3.14, True} # This is a set with mixed data types
+my_set4 = set() # This is an empty set
+
+methods for set manipulation give each method with example:
+
+- add() : adds an item to the set.
+  example: my_set = {1, 2, 3}
+           my_set.add(4)
+           print(my_set)  # Output: {1, 2, 3, 4}
+
+- remove() : removes a specified item from the set. Raises KeyError if the item is not found.
+    example: my_set = {1, 2, 3, 4}
+             my_set.remove(2)
+             print(my_set)  # Output: {1, 3, 4}
+
+- discard() : removes a specified item from the set. Does not raise an error if the item is not found.
+    example: my_set = {1, 2, 3, 4}
+             my_set.discard(2)
+             print(my_set)  # Output: {1, 3, 4}
+             my_set.discard(5)  # No error, item not found
+             print(my_set)  # Output: {1, 3, 4}
+
+- union() : returns a new set that contains all items from both sets.
+    example: set1 = {1, 2, 3}
+             set2 = {3, 4, 5}
+             print(set1.union(set2))  # Output: {1, 2, 3, 4, 5} 
+
+- intersection() : returns a new set that contains only the items that are present in both sets.
+    example: set1 = {1, 2, 3}
+             set2 = {3, 4, 5}
+             print(set1.intersection(set2))  # Output: {3}  
+
+
+
+
+5. Dictionary :
+    => dict is a collection of key-value pairs which are ordered (from Python 3.7 onwards) and changeable (mutable).
+    => it allows duplicate members for values but not for keys.
+    => it is defined by enclosing the key-value pairs in curly braces {}.
+
+example of dict:
+my_dict = {"name": "Manohar", "age": 22} # This is a dictionary with string keys
+my_dict2 = {1: "apple", 2: "banana", 3: "cherry"} # This is a dictionary with integer keys
+my_dict3 = {"name": "Manohar", "age": 22, "city": "New York"} # This is a dictionary with mixed data types
+my_dict4 = {} # This is an empty dictionary
+
+
+methods for dict manipulation give each method with example:
+
+- keys() : returns a view object that displays a list of all the keys in the dictionary.
+  example: my_dict = {"name": "Manohar", "age": 22}
+           print(my_dict.keys())  # Output: dict_keys(['name', 'age'])
+
+- values() : returns a view object that displays a list of all the values in the dictionary.
+  example: my_dict = {"name": "Manohar", "age": 22}
+           print(my_dict.values())  # Output: dict_values(['Manohar', 22])
+
+- items() : returns a view object that displays a list of all the key-value pairs in the dictionary as tuples.
+    example: my_dict = {"name": "Manohar", "age": 22}
+             print(my_dict.items())  # Output: dict_items([('name', 'Manohar'), ('age', 22)])
+
+- get() : returns the value for a specified key if the key is in the dictionary, otherwise returns a default value (None if not specified).
+    example: my_dict = {"name": "Manohar", "age": 22}
+                print(my_dict.get("name"))  # Output: Manohar
+                print(my_dict.get("city", "Not Found"))  # Output: Not Found 
+
+- update() : updates the dictionary with the key-value pairs from another dictionary or an iterable of key-value pairs.
+    example: my_dict = {"name": "Manohar", "age": 22}
+             my_dict.update({"city": "New York", "age": 23})
+             print(my_dict)  # Output: {'name': 'Manohar', 'age': 23, 'city': 'New York'}
+
+- pop() : removes and returns the value for a specified key. Raises KeyError if the key is not found.
+    example: my_dict = {"name": "Manohar", "age": 22}
+             age = my_dict.pop("age")
+             print(age)  # Output: 22
+             print(my_dict)  # Output: {'name': 'Manohar'}
+             
+
+- popitem() : removes and returns the last inserted key-value pair as a tuple. Raises KeyError if the dictionary is empty.
+    example: my_dict = {"name": "Manohar", "age": 22}
+             item = my_dict.popitem()
+             print(item)  # Output: ('age', 22)
+             print(my_dict)  # Output: {'name': 'Manohar'}
+
+
+- clear() : removes all items from the dictionary.
+    example: my_dict = {"name": "Manohar", "age": 22}
+             my_dict.clear()
+                print(my_dict)  # Output: {} 
+
+
+
+
+

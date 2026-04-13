@@ -35,20 +35,36 @@
 
 #! WAP TO CREATE A FUNCTION THAT TAKES A STRING AND RETURNS THE COUNT OF VOWELS AND CONSONENR SEPERATELY?
 
-def letters(s):
-    vowels = 'aeiouAEIOU'
-    countV = 0
-    countC = 0
-    for i in s:
-        if(i.isalpha()):
-            if(i in vowels):
-                countV =countV+1
-            else:
-                countC = countC+1
+# def letters(s):
+#     vowels = 'aeiouAEIOU'
+#     countV = 0
+#     countC = 0
+#     for i in s:
+#         if(i.isalpha()):
+#             if(i in vowels):
+#                 countV =countV+1
+#             else:
+#                 countC = countC+1
             
-    return countV,countC
+#     return countV,countC
 
-print(letters("MANUwww123"))
+# print(letters("MANUwww123"))
+
+
+
+# count = 0
+# while count<3:
+#     print('loop: ',count+1)
+#     for i in range(1,6):
+#         if i % 2 == 0:
+#             print(i,'is even')
+#         else:
+#             print(i,'is odd')
+#     count +=1
+# print('Exit')
+
+
+
 
 
 

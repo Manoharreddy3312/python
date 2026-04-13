@@ -28,7 +28,7 @@ while True:
     
     if op== 1:
         name =input("mi peru chepachu kadhaa.... : ")
-        a = int(input("sir miru madama\n1)Yes\n2)No"))
+        a = int(input("sir miru madama\n1)Yes : \n2)No1: "))
         if a==1:
             gender = 'Female'
         elif a==2:
@@ -59,23 +59,23 @@ while True:
         
     elif op==3:
         acc =int(input("Enter the Account number : "))
-        pin = int(input("Enter the pin : "))
+        pin = input("Enter the pin : ")
         check_balance(acc,pin)
         
     elif op==4:
         acc =int(input("Enter the account number : "))
-        pin =int(input("Enter the pin : "))
+        pin = input("Enter the pin : ")
         deposit(acc,pin)
         
     elif op==5:
         acc =int(input("Enter the account number : "))
-        pin =int(input("Enter the pin : "))
+        pin = input("Enter the pin : ")
         withdraw(acc,pin)
             
     elif op ==6:
         from_acc =int(input("Enter the senders account number : "))
         to_acc =int(input("Enter the recevier account number : "))
-        pin =int(input("Enter the pin:"))
+        pin = input("Enter the pin:")
         acc_transfer(from_acc,to_acc,pin)
     else:
         exit()

@@ -27,8 +27,8 @@ def set_pin(acc,phone,aadhar):
     if data:
         if data[0]==phone:
             if data[1]==aadhar:
-                pin=int(input("Enter the pin: "))
-                c_pin=int(input("re enter the pin: "))
+                pin=input("Enter the pin: ")
+                c_pin=input("re enter the pin: ")
                 if pin==c_pin:
                     cursor.execute(f"update account set pin='{encrypt(c_pin)}' where acc_num={acc}")
                     connect.commit()
